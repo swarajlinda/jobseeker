@@ -49,5 +49,9 @@ Route::middleware([
         Route::get('user/apply-job/{id}', 'applyJobView')->name('users.applyjob.view');
         Route::post('user/apply-job', 'applyJob')->name('users.applyjob');
         Route::get('admin/applied-jobs', 'userAppliedJobs')->name('appliedjob.view');
+        Route::get('admin/jobmap-by-id/{id}', 'jobmapById');            // Mapped Job Details by id
+        Route::post('admin/userjob-update', 'userJobUpdate')->name('userjob.update');       // User Job Update
+        Route::get('user/my-applied-job', 'myAppliedJob')->name('users.myAppliedJob');     // My Applied Job List
+        Route::get('users/applied-job-details/{id}', 'appliedJobDetails')->name('users.appliedJobDetails');    // Applied
     });
 });
