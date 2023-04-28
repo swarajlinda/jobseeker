@@ -48,5 +48,6 @@ Route::middleware([
     Route::controller(UserJobController::class)->group(function () {
         Route::get('user/apply-job/{id}', 'applyJobView')->name('users.applyjob.view');
         Route::post('user/apply-job', 'applyJob')->name('users.applyjob');
+        Route::get('admin/applied-jobs', 'userAppliedJobs')->name('appliedjob.view');
     });
 });

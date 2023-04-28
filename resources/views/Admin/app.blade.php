@@ -251,7 +251,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                                    <a href="{{route('appliedjob.view')}}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Applied Jobs Requests</p>
                                     </a>

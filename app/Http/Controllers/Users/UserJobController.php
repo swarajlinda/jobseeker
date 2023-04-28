@@ -36,4 +36,10 @@ class UserJobController extends Controller
         $mUserJobMap->store($metaReq);
         return back()->with('success', 'Successfully Applied for the Job');
     }
+
+    // User Applied Jobs
+    public function userAppliedJobs()
+    {
+        return view('Admin.Jobs.applied-jobs');
+    }
 }
